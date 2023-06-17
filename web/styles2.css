@@ -1,0 +1,18 @@
+@keyframes fillAnimation {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  h1 {
+    background-image: linear-gradient(to top, #7e05d7, #bd04a9);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fillAnimation 2s linear infinite;
+  }
+  

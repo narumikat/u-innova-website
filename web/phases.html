@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 48px;
+      text-align: center;
+      background: linear-gradient(to top, #7e05d7, #bd04a9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="animated-text">Fase 1</h1>
+
+  <script>
+    const textElement = document.getElementById('animated-text');
+    const colors = ['#7e05d7', '#bd04a9'];
+    let currentColorIndex = 0;
+
+    function animateText() {
+      const currentColor = colors[currentColorIndex];
+      textElement.style.backgroundImage = `linear-gradient(to top, ${currentColor}, transparent)`;
+      currentColorIndex = (currentColorIndex + 1) % colors.length;
+    }
+
+    setInterval(animateText, 2000);
+  </script>
+</body>
+</html>
