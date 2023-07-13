@@ -1,0 +1,18 @@
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]*)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+RewriteRule ^solutions$ /#solutions [R=301,L]
+RewriteRule ^details$ /#details [R=301,L]
+RewriteRule ^header$ / [R=301,L]
+RewriteRule ^about$ /about.html [R=301,L]
+RewriteRule ^home$ /index.html [R=301,L]
+RewriteRule ^terms$ /terms.html [R=301,L]
+RewriteRule ^privacy$ /privacy.html [R=301,L]
+RewriteRule ^home/plans$ /index.html#plans [R=301,L]
+RewriteRule ^home$ /index.html#header [R=301,L]
+RewriteRule ^home/solutions$ /index.html#solutions [R=301,L]
+RewriteRule ^home/details$ /index.html#details [R=301,L]
+RewriteRule ^home/software$ /index.html#software [R=301,L]
+RewriteRule ^home/plans$ /index.html#plans [R=301,L]
