@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta name="description" content="Your description">
-        <meta name="author" content="Your name">
+        <meta name="description" content="U-Innova Studios é uma empresa de marketing e publicidade especializada em oferecer soluções abrangentes para seus clientes. Nossos serviços incluem marketing solutions e software solutions. Entre em contato conosco para obter mais informações.">
+        <meta name="author" content="U-innova">
 
         <meta property="og:site_name" content="u-innova" />
         <meta property="og:site" content="https://u-innova.com" />
@@ -28,7 +28,7 @@
 
         <link rel="icon" href="images/favicon.png">
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#navbarExample">
         
         <!-- Navigation -->
         <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
@@ -39,35 +39,37 @@
                 <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                  
+                <nav class="language-nav">
+                    <ul class="language-list">
+                      <li><a href="#" onclick="changeLanguage('pt')" class="language-btn"><span class="flag-br"></span></a></li>
+                      <li><a href="#" onclick="changeLanguage('en')" class="language-btn"><span class="flag-en"></span></a></li>
+                    </ul>
+                  </nav>
 
-                <nav>
-                  <ul>
-                    <li><a href="#" onclick="changeLanguage('pt')">Português</a></li>
-                    <li><a href="#" onclick="changeLanguage('en')">English</a></li>
-                  </ul>
-                </nav>
-
-                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                  <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ms-auto navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#header">Home</a>
+                            <a class="nav-link smooth-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#solutions">Solutions</a>
+                            <a class="nav-link" id="navContact" href="index.html#contact">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#details">Details</a>
+                            <a class="nav-link" id="navSolutions" href="index.html#solutions">Soluções</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#software">Software</a>
+                            <a class="nav-link" href="index.html#software">Software</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#plans">Planos</a>
+                            <a class="nav-link" id="navPlans" href="index.html#plans">Planos</a>
                         </li>
+
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">More</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
                                 <li><div class="dropdown-divider"></div></li>
                                 <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
                                 <li><div class="dropdown-divider"></div></li>
@@ -75,6 +77,8 @@
                             </ul>
                         </li>
                     </ul>
+
+
                     <span class="nav-item social-icons">
                         <span class="fa-stack">
                             <a target="_blank" href="https://www.facebook.com/uinnova.studio">
@@ -89,7 +93,7 @@
                             </a>
                         </span>
                     </span>
-                </div> <!-- end of navbar-collapse -->
+                </div>  <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
         </nav> <!-- end of navbar -->
         <!-- end of navigation -->
@@ -100,50 +104,47 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
-                        <h1>Termos & Condições</h1>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </header> <!-- end of ex-header -->
-        <!-- end of header -->
+                        <h1 id="TermsTittle">Termos & Condições</h1>
+                    </div> 
+                </div> 
+            </div> 
+        </header> <!-- end of header -->
 
 
-        <!-- Basic -->
         <div class="ex-basic-1 pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-10 offset-xl-1">
                         
-                            <p>Ao acessar e utilizar o site U-Innova Studios, você concorda em cumprir estes termos e condições de uso. Caso não concorde com algum dos termos descritos abaixo, recomendamos que você interrompa o uso do site.</p>
+                            <p id="TermsP1">Ao acessar e utilizar o site U-Innova Studios, você concorda em cumprir estes termos e condições de uso. Caso não concorde com algum dos termos descritos abaixo, recomendamos que você interrompa o uso do site.</p>
                         
 
-                        <h2 class="mb-3">1. Uso do site</h2>
-                        <p>O site U-Innova Studios destina-se a fornecer informações sobre nossos serviços de marketing e publicidade. Você concorda em utilizar o site apenas para fins legítimos e de acordo com todas as leis e regulamentações aplicáveis. </p>
+                        <h2 class="mb-3" id="hTerms1">1. Uso do site</h2>
+                        <p id="TermsP2">O site U-Innova Studios destina-se a fornecer informações sobre nossos serviços de marketing e publicidade. Você concorda em utilizar o site apenas para fins legítimos e de acordo com todas as leis e regulamentações aplicáveis. </p>
 
-                        <h2 class="mb-3">2. Informações de contato</h2>
-                        <p>Ao preencher nosso formulário de contato, você concorda em fornecer informações precisas e atualizadas, incluindo seu nome, endereço de e-mail e número de telefone. Essas informações são coletadas com o objetivo de entrarmos em contato com você e fornecer informações sobre nossos serviços. Respeitamos sua privacidade e não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para cumprir obrigações legais ou com o seu consentimento expresso.</p>
+                        <h2 class="mb-3" id="hTerms2">2. Informações de contato</h2>
+                        <p id="TermsP3">Ao preencher nosso formulário de contato, você concorda em fornecer informações precisas e atualizadas, incluindo seu nome, endereço de e-mail e número de telefone. Essas informações são coletadas com o objetivo de entrarmos em contato com você e fornecer informações sobre nossos serviços. Respeitamos sua privacidade e não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para cumprir obrigações legais ou com o seu consentimento expresso.</p>
                         
-                        <h2 class="mb-3">Propriedade intelectual</h2>
-                        <p>Todos os direitos autorais, marcas registradas e outros direitos de propriedade intelectual relacionados ao conteúdo e design do site U-Innova Studios são de propriedade exclusiva da nossa empresa ou de terceiros devidamente autorizados. É proibido copiar, reproduzir, modificar, distribuir ou utilizar qualquer conteúdo do site sem a nossa autorização por escrito.</p>
+                        <h2 class="mb-3" id="hTerms3">Propriedade intelectual</h2>
+                        <p id="TermsP4">Todos os direitos autorais, marcas registradas e outros direitos de propriedade intelectual relacionados ao conteúdo e design do site U-Innova Studios são de propriedade exclusiva da nossa empresa ou de terceiros devidamente autorizados. É proibido copiar, reproduzir, modificar, distribuir ou utilizar qualquer conteúdo do site sem a nossa autorização por escrito.</p>
 
-                        <h2 class="mb-3">Links para sites de terceiros</h2>
-                        <p>O site U-Innova Studios pode conter links para sites de terceiros. Esses links são fornecidos apenas para conveniência e não implicam em endosso ou responsabilidade pelos conteúdos desses sites. Recomendamos que você revise os termos e condições e políticas de privacidade desses sites antes de utilizá-los.</p>
+                        <h2 class="mb-3" id="hTerms4">Links para sites de terceiros</h2>
+                        <p id="TermsP5">O site U-Innova Studios pode conter links para sites de terceiros. Esses links são fornecidos apenas para conveniência e não implicam em endosso ou responsabilidade pelos conteúdos desses sites. Recomendamos que você revise os termos e condições e políticas de privacidade desses sites antes de utilizá-los.</p>
 
-                        <h2 class="mb-3">Limitação de responsabilidade</h2>
-                        <p>O site U-Innova Studios é fornecido "no estado em que se encontra" e não oferece garantias de qualquer tipo, expressas ou implícitas. Não nos responsabilizamos por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos decorrentes do uso ou impossibilidade de uso do site.</p>
+                        <h2 class="mb-3" id="hTerms5">Limitação de responsabilidade</h2>
+                        <p id="TermsP6">O site U-Innova Studios é fornecido "no estado em que se encontra" e não oferece garantias de qualquer tipo, expressas ou implícitas. Não nos responsabilizamos por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos decorrentes do uso ou impossibilidade de uso do site.</p>
 
-                        <h2 class="mb-3">Alterações nos termos e condições</h2>
-                        <p>Reservamo-nos o direito de atualizar ou modificar estes termos e condições a qualquer momento, sem aviso prévio. Recomendamos que você revise periodicamente esta página para se manter atualizado sobre quaisquer alterações. O uso contínuo do site após a publicação de alterações constitui a sua aceitação dessas alterações.</p>
+                        <h2 class="mb-3" id="hTerms6">Alterações nos termos e condições</h2>
+                        <p id="TermsP7">Reservamo-nos o direito de atualizar ou modificar estes termos e condições a qualquer momento, sem aviso prévio. Recomendamos que você revise periodicamente esta página para se manter atualizado sobre quaisquer alterações. O uso contínuo do site após a publicação de alterações constitui a sua aceitação dessas alterações.</p>
 
-                        <h2 class="mb-3">Lei aplicável e jurisdição</h2>
-                        <p>Estes termos e condições são regidos pelas leis do Brasil. Qualquer disputa relacionada ao uso do site U-Innova Studios estará sujeita à jurisdição exclusiva dos tribunais competentes do Brasil.</p>
+                        <h2 class="mb-3" id="hTerms7">Lei aplicável e jurisdição</h2>
+                        <p id="TermsP8">Estes termos e condições são regidos pelas leis do Brasil. Qualquer disputa relacionada ao uso do site U-Innova Studios estará sujeita à jurisdição exclusiva dos tribunais competentes do Brasil.</p>
 
-                        <a class="btn-solid-reg mb-5" href="index.html#contact">Contact us</a>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of ex-basic-1 -->
-        <!-- end of basic -->
+                        <a class="btn-solid-reg mb-5" href="https://prod.u-innova.com/messages/new">Contact us</a>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
 
 
         <!-- Footer -->
@@ -158,8 +159,8 @@
                         <div class="footer-col second">
                             <h6>Links</h6>
                             <ul class="list-unstyled li-space-lg p-small">
-                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                                <li>Menu: <a href="index.html">Home</a>, <a href="index.html#solutions">Solutions</a>, <a href="index.html#software">Software</a>, <a href="index.html#plans">Plans</a></li>
+                                <li>Important: <a class="smooth-link" href="terms.html">Termos & Condições</a>, <a class="smooth-link" href="privacy.html">Política de Privacidade</a></li>
+                                <li>Menu: <a class="smooth-link" href="index.html">Home</a>, <a class="smooth-link" href="index.html#solutions">Soluções</a>, <a class="smooth-link" href="index.html#software">Software</a>, <a class="smooth-link" href="index.html#plans">Planos</a></li>
                             </ul>
                         </div> <!-- end of footer-col -->
                         <div class="footer-col third">
@@ -175,8 +176,8 @@
                                     <i class="fab fa-instagram fa-stack-1x"></i>
                                 </a>
                             </span>
-                            <p>Entre em contato </p>
-                            <p class="p-small" id="ContactUsFooter"><a href="mailto:contact@u-innova.com"><strong>contact@u-innova.com</strong></a></p>
+                            <p id="ContactUsFooter">Entre em contato </p>
+                            <p class="p-small"><a href="mailto:contact@u-innova.com"><strong>contact@u-innova.com</strong></a></p>
                         </div> <!-- end of footer-col -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -185,17 +186,16 @@
         <!-- end of footer -->
 
 
-        <!-- Copyright -->
-        <div class="copyright">
+         <!-- Copyright -->
+         <div class="copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="p-small">Copyright © <a href="u-innova.com">U-innova</a></p>
+                        <p class="p-small">Copyright © <a class="smooth-link" href="https://u-innova.com/">U-innova</a></p>
                     </div> <!-- end of col -->
                 </div> <!-- enf of row -->
             </div> <!-- end of container -->
         </div> <!-- end of copyright -->
-        <!-- end of copyright -->
 
 
         <!-- Back To Top Button -->
@@ -206,10 +206,7 @@
 
         <!-- Scripts -->
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-        <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-        <script src="js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
-        <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="js/scripts.js"></script>
+        <script src="js/script-lan.js"></script>
     </body>
 </html>
