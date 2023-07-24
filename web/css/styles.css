@@ -647,6 +647,21 @@ hr.hr-heading {
 	text-align: center;
 }
 
+.swiper-slide {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.img-slider {
+    max-width: 100px;
+    height: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /************************/
 /*     Registration     */
